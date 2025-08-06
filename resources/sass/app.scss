@@ -1,0 +1,157 @@
+
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+
+@import 'variables';
+
+
+@import 'bootstrap/scss/bootstrap';
+
+
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+.data-user a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-publics{
+    padding: 0px;
+}
+
+.description {
+    padding: 9px 20px;
+
+}
+
+.buttons-user {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 0px 23px;
+    text-align: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.comments{
+    width: 20%;
+}
+
+
+.icon-heart {
+    width:30px;
+    vertical-align: middle;
+}
+
+.btn-coments{
+    margin:  20px 0px;
+}
+
+.image-detail{
+    max-height: 500px;
+}
+
+.pub_image-detail{
+
+}
+
+.comments-detail{
+    padding: 20px;
+}
+
+.comment{
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #9e9e9e;
+    border-radius: 20px;
+}
+
+.nickname{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.comment_content {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 7px;
+}
+
+.home-comment{
+    padding: 20px;
+}
+
+.comment_btn{
+    margin-left: 9px;
+}
+
+.number-likes{
+    color: gray;
+    font-size: 11px;
+}
+
+.icon-heart--detail{
+    margin-left: 15px;
+}
+
+.data-user--profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d1cbcb;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #e1e1e147;
+
+}
+
+.container-avatar--profile{
+    overflow: hidden;
+}
+
+.avatar--profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+    margin: 17px 4px;
+}
+
+.user_info--profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.profile_nick{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2d3748;
+}
+.profile_name{
+    font-weight: unset;
+    color: #4e4e4ffc;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.image-container--edit{
+    width: 90%;
+    height: 50%;
+    margin: 15px;
+}
+
+.image-file--edit{
+    width: 100%;
+    height: 100%;
+}
