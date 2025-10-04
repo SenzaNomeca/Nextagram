@@ -7,60 +7,76 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Nextagram
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Un proyecto de demostración que replica las funcionalidades clave de una plataforma de red social centrada en publicaciones e interacciones, inspirado en Instagram para probar mis conocimientos en Laravel, logica de PHP y manejo de bases de datos.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 💡 Sobre el Proyecto
 
-## Learning Laravel
+**Nextagram** es una aplicación desarrollada para simular las interacciones esenciales de una red social. El objetivo principal es demostrar la capacidad de construir una aplicación web transaccional completa, con gestión de contenido de usuario y dinámica social.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Características Implementadas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* **Gestión de Publicaciones:** Creación, visualización y eliminación de publicaciones por parte del usuario.
+* **Sistema de "Me Gusta" (Likes):** Los usuarios autenticados pueden interactuar con las publicaciones.
+* **Comentarios:** Funcionalidad para dejar y visualizar comentarios en cada post.
+* **Autenticación de Usuarios:** Registro e inicio de sesión seguro.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Stack Tecnológico
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Este proyecto fue construido utilizando el ecosistema de Laravel, demostrando un sólido conocimiento en desarrollo backend y prácticas MVC.
 
-### Premium Partners
+* **Backend Framework:** **Laravel** (PHP)
+* **Lenguajes:** PHP, JavaScript
+* **Bases de Datos:** SQL (a través de Eloquent ORM)
+* **Vistas:** Blade
+* **Estilos:** SCSS
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+---
 
-## Contributing
+## ⚙️ Configuración e Instalación
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Sigue estos pasos para levantar el proyecto en tu entorno local. Se requiere tener **PHP** y **Composer** instalados.
 
-## Code of Conduct
+1.  **Clonar el Repositorio:**
+    ```bash
+    git clone [https://github.com/SenzaNomeca/Nextagram.git](https://github.com/SenzaNomeca/Nextagram.git)
+    cd Nextagram
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2.  **Instalar Dependencias de PHP:**
+    ```bash
+    composer install
+    ```
 
-## Security Vulnerabilities
+3.  **Configurar el Entorno:**
+    Copia el archivo de ejemplo y genera una clave de aplicación.
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    *Asegúrate de configurar tu conexión a la base de datos en el archivo `.env`.*
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4.  **Ejecutar Migraciones:**
+    Crea las tablas de la base de datos y, opcionalmente, ejecuta los seeders si existen.
+    ```bash
+    php artisan migrate
+    # php artisan db:seed # Si hay datos de prueba
+    ```
 
-## License
+5.  **Compilar Assets (Frontend):**
+    Se usa Vite, instala las dependencias de Node e inicia la compilación.
+    ```bash
+    npm install
+    npm run dev  # o npm run build
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6.  **Iniciar el Servidor de Desarrollo de Laravel:**
+    ```bash
+    php artisan serve
+    ```
+    Normalmente la aplicación estará disponible en `http://127.0.0.1:8000` (o similar).
